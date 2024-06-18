@@ -1,0 +1,136 @@
+body { 
+	/* background-color: #333366; */
+	/* background-color: #000099; */ 
+	background-color: #EBE3E0; 
+	font-family: verdana, geneva, arial, sans-serif;
+	/* font-family: roboto, arial, sans-serif; */ 
+	color: #000000;
+	/*color: #FFFF00; */ 
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+#container {
+	font-size: .8em;
+    line-height: 1.2em;
+		
+}
+
+a:link { 
+	color: #7B7BF9; text-decoration: underline;
+	/* color: #FF3300; text-shadow: 1px 1px #FF9933; */
+}
+	
+a:visited { 
+	color: #999999; text-decoration: underline; 
+} 
+	
+a:active { 
+	color: #FFFFFF; text-decoration: none; 
+}
+	
+a:hover { 
+	color: #000066; text-decoration: none; 
+    background-color: #9999CC; 
+}
+
+h1 { 
+	font-size: 2em;    font-weight: bold; 
+	/* color: white; */
+}
+
+h2 { 
+	font-size: 1.5em;  font-weight: bold;
+	line-height: 1.8em;
+	/* color: #33FF33; */
+}
+
+h3 { 
+	font-size: 1em;  font-weight: bold; 
+}
+
+ul { 
+	list-style: square; 
+}
+
+ol.Question {
+    counter-reset: item;
+    list-style-type: none;
+	/*list-style-type: decimal;*/
+	/*margin-left: 0;*/
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+ol.Question li:before {
+    content: 'Q' counter(item, decimal) ': ';
+    counter-increment: item;
+}
+
+ol.Answer {
+    counter-reset: item;
+    list-style-type: none;
+	/*list-style-type: decimal;*/
+	/*margin-left: 0;*/
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+ol.Answer li:before {
+    content: 'A' counter(item, decimal) ': ';
+    counter-increment: item;
+}
+
+ul.SquareMarker { list-style-type: square; }
+
+p.alignWithList {
+    text-indent: 0em;
+}
+
+/* left align element */
+.left{
+text-align:left;
+float:left;
+}
+/* right align element */
+.right{
+float:right;
+text-align:right;
+}
+/* center align element */
+.centered{
+text-align:center;
+}
+
+
+/* header 3 column table layout */
+#header { display: table; width: 100%; table-layout: auto; }
+#header > div { display: table-cell; }  
+
+
+/* footer 3 column table layout */
+#footer { display: table; width: 100%; table-layout: auto; font-size: .8em;}
+#footer > div { display: table-cell; } 
+
+/* color for Assignments Without Anchors */
+.assignment {
+	color: #FF7148;
+}
+
+.assignment li a:link {
+	color: #c916b3;
+}
+
+.assignment li:last-child a:link {
+	color: #0080ff;
+}
+.assignment li:last-child a:visited {
+	color: #0080ff;
+	font-weight: 700;
+}
+
+
+/* Position Form Button Elements */
+#submitButton {display:inline-block;margin-right:10px;} 
+#resetButton {display:inline-block;margin-right:10px;}  
+#reloadButton {display:inline-block;margin-right:10px;}  
